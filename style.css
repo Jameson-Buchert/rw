@@ -1,0 +1,256 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(207, 208, 209);
+
+  background-color: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.8;
+  display: block;
+}
+
+/*Nav Animation*/
+.nav__link--underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav__link--underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0;
+  height: 3px;
+
+  background-color: rgb(0, 110, 255);
+  transition: width 0.4s ease;
+}
+
+.nav__link--underline:hover::after {
+  width: 100%;
+}
+
+.nav__link--signup {
+  padding: 10px;
+  border-radius: 100px;
+  transition: all 800ms ease;
+}
+
+.nav__link--signup:hover {
+  background-color: rgb(0, 110, 255);
+  color: white;
+}
+
+/*Landing*/
+
+.landing {
+  display: inline-block;
+  display: flex;
+}
+
+.nav__link--list {
+  padding-left: 1100px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 25px;
+  animation: fade-up 600ms 1000ms backwards;
+}
+
+.page-title {
+  display: flex;
+  margin: 30px;
+  padding: 30px;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 100px;
+  font-size: 25px;
+  animation: fade-up 600ms 1000ms backwards;
+}
+
+.page__title--img {
+  overflow: hidden;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  animation: fade-up 600ms 1000ms backwards;
+}
+
+.text--color {
+  color: rgb(0, 110, 255);
+}
+
+/*Get Started*/
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin-left: 100px;
+  padding: 50px;
+}
+
+.header__customers {
+  width: 500px;
+  max-width: 100%;
+  margin-top: -40px;
+  display: flex;
+  animation: fade-up 400ms 350ms backwards;
+}
+
+.header__img {
+  width: 500%;
+  max-width: 768px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-left: 20px;
+  animation: fade-up 400ms 600ms backwards;
+}
+
+.header__description h2 {
+  text-decoration: underline;
+  font-size: 35px;
+  animation: fade-up 400ms 900ms backwards;
+}
+
+.header__description--para {
+  margin: 32px 0px;
+  animation: fade-up 400ms 800ms backwards;
+}
+
+.header__email {
+  margin: 25px auto;
+  animation: fade-up 400ms 600ms backwards;
+}
+
+.header__customers--title {
+  color: grey;
+  animation: fade-up 400ms 400ms backwards;
+}
+
+.header__email--input {
+  font-size: xx-large;
+  position: absolute;
+
+  z-index: 1;
+  border-radius: 500px;
+  border-style: solid;
+  border-image: none;
+  border: 4px solid #d9e1ea;
+  padding: 20px 192px 20px 32px;
+  transform: scale(1);
+  transition: all 800ms ease;
+}
+
+.header__email--btn {
+  position: relative;
+  margin: 11px;
+  z-index: 2;
+  left: 350px;
+  font-size: xx-large;
+  padding: 12px;
+  border-radius: 500px;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  transform: scale(1);
+  transition: 500ms ease;
+}
+
+.header__email--input:hover {
+  border-color: rgb(0, 110, 255);
+  box-shadow: 0 0 16px;
+  transform: scale(1.03);
+}
+
+.header__email--btn:hover {
+  background-color: rgb(29, 92, 175);
+  transform: scale(0.97);
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Features*/
+
+.features__title {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 200px;
+}
+
+.features__title h1 {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.features__subtitle {
+  font-size: 20px;
+}
+
+.feature__img {
+  width: 125px;
+  max-width: 100%;
+}
+
+.row__narrow {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 70px 90px;
+
+  margin-top: 80px;
+}
+
+.feature__row {
+  gap: 20px;
+}
+
+.feature__img--wrapper {
+  width: 300px;
+  min-width: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__title {
+  text-decoration: underline;
+}
