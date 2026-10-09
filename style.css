@@ -416,6 +416,26 @@ p {
 /* Pricing */
 
 
+.customer__plans--title {
+  position: relative;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.customer__plans--title h2 {
+  font-size: xx-large;
+}
+
+.customer__plans--title h1{
+  text-decoration: underline;
+  font-size: 50px;
+}
+
+.customer__plans--title p {
+  font-size: 25px;
+}
+
+
 
 
 
