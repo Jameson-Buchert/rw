@@ -103,6 +103,9 @@ p {
   color: rgb(0, 110, 255);
 }
 
+.sub__text--color{
+  color: grey;
+}
 /*Get Started*/
 
 .row {
@@ -410,10 +413,14 @@ p {
 }
 
 
+/* Pricing */
+
+
 
 
 
 /*MUST be updated once project is finished*/
+/* Replace this with something more efficient  */
 
 
 /* ============================= */
