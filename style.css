@@ -441,13 +441,15 @@ p {
 
 /* Plan Types */
 .plan__types{
-  display: grid;
-  position: absolute;
-  margin: 20px;
-  grid-template-columns: repeat(50, 1fr);
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.WYG__list--wrapper {
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  padding: 0 40px;
-  width: 500px;
+  
 }
 
 .plan__type{
