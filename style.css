@@ -663,16 +663,81 @@ p {
 
 /* Ratings */
 
+.listed__test--wrapper {
+  display: flex;
+  position: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+
+.listed__testimonials{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.testimonial{
+  position: relative;
+  align-items: center;
+  
+  border: 8px solid rgba(180, 180, 180, 0.25);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+
+}
+
+.profile__img--wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile__img {
+  border-radius: 500px;
+  width: 100px;
+  max-width: 100px;
+  margin: 20px;
+}
 
 
+.rating__img--wrapper{
+  margin-top: 8px;
 
+}
 
+.rating__img {
+  border-radius: 500px;
+  width: 100px;
+  max-width: 100px;
+  margin: 0;
+}
 
+.cust__profile--text{
+  display: flex;
+  flex-direction: column;
+}
 
+.cust__profile--text h3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  text-decoration: underline;
+}
 
+.cust__profile--text p {
+  margin: 0;
+}
 
-
-
+.cust__profile--para{
+  text-align: center;
+  margin-top: 20px;
+}
 
 
 
