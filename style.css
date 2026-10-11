@@ -739,6 +739,75 @@ p {
   margin-top: 20px;
 }
 
+/* Get started (End of page)*/
+
+.get__started--wrapper{
+  background-color: rgb(34, 47, 61);
+  border-radius: 50px;
+  padding: 50px;
+  margin: 200px;
+
+}
+
+.get__started--title{
+  padding-bottom: 40px;
+  text-decoration: underline;
+}
+
+.get__started--text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.get__started--text h1{
+  font-size: 40px;
+  width: 650px;
+}
+
+.get__started--btns{
+  display: flex;
+  align-items: center;  
+  gap: 100px;
+  padding-right: 600px;
+  margin: 50px;
+  
+}
+
+.GS__btn,
+.CU__btn{
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 500px;
+
+  transition: all 500ms ease;
+}
+
+.GS__btn {
+  border: none;
+  background-color: rgb(0, 110, 255);
+}
+
+.GS__btn:hover {
+  opacity: .8;
+  background-color: rgb(29, 92, 175);
+  box-shadow: 0 0 15px;
+  transition: all 500ms ease;
+}
+
+.CU__btn{
+  border-color: white;
+  background-color: transparent;
+}
+
+.CU__btn:hover{
+  opacity: .8;
+  box-shadow: 0 0 15px;
+  transition: all 500ms ease;
+}
 
 
 
