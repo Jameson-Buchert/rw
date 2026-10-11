@@ -119,8 +119,7 @@ p {
   animation: fade-up 600ms 1000ms backwards;
 }
 
-/*Get Started*/
-
+/* Get Started */
 .row {
   display: flex;
   align-items: center;
@@ -630,6 +629,21 @@ p {
   transition: all 800ms ease;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
