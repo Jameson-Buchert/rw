@@ -25,6 +25,18 @@ p {
   display: block;
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*Nav Animation*/
 .nav__link--underline {
   position: relative;
@@ -195,18 +207,7 @@ p {
   color: lightgrey;
   background-color: rgb(29, 92, 175);
   transform: scale(0.97);
-}
 
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /*Features*/
@@ -456,7 +457,16 @@ p {
   margin: 20px;
   padding: 30px;
   width: 100%;
+
+  transition: all 800ms ease;
 }
+
+.plan__type:hover{
+  color: rgb(0, 110, 255);
+  box-shadow: 0 0 30px;
+  transition: all 800ms ease;
+}
+
 
 .plan__type--title{
   font-size: 40px;
