@@ -441,15 +441,12 @@ p {
 
 /* Plan Types */
 .plan__types{
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-
-.WYG__list--wrapper {
+  display: grid;
+  position: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
-  
+  justify-content: center;
+  gap: 40px;
+
 }
 
 .plan__type{
@@ -500,6 +497,11 @@ p {
   height: 0;
   border: 3px solid rgba(180, 180, 180, 0.25);
   align-items: center;
+}
+
+.WYG__list--wrapper {
+  overflow: hidden;
+
 }
 
 .WYG__list {
