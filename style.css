@@ -634,6 +634,7 @@ p {
 
 /* Testimonials */
 
+/* Testimonials title */
 .company__test{
   position: relative;
   justify-content: space-around;
@@ -659,6 +660,8 @@ p {
 .company__test--title p{
   font-size: 25px;
 }
+
+/* Ratings */
 
 
 
