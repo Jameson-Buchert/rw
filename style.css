@@ -25,6 +25,14 @@ p {
   display: block;
 }
 
+.text--color {
+  color: rgb(0, 110, 255);
+}
+
+.sub__text--color{
+  color: grey;
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -111,13 +119,6 @@ p {
   animation: fade-up 600ms 1000ms backwards;
 }
 
-.text--color {
-  color: rgb(0, 110, 255);
-}
-
-.sub__text--color{
-  color: grey;
-}
 /*Get Started*/
 
 .row {
@@ -526,6 +527,7 @@ p {
   font-size: 22px;
 }
 
+/* Plan Buttons */
 .plan__button--wrapper{
   align-self: end;
   justify-self: center;
@@ -535,11 +537,98 @@ p {
   padding-bottom: 50px;
 }
 
-.plan__button{
+/* Low Level */
+.price__low--wrapper{
+  transition: all 800ms ease;
+}
+
+.price__low{
+  background-color: rgb(62, 160, 62);
+  color: white;
+  font-size: xx-large;
+
   margin: 0;
+  border: none;
   border-radius: 500px;
   padding: 20px;
+  transition: all 800ms ease;
+
+}
+
+.price__low:hover {
+  background-color: rgb(63, 112, 63);
+  transition: all 800ms ease;
+}
+
+.price__low--wrapper:hover{
+  color: rgb(62, 160, 62);
+  border-radius: 500px;
+  box-shadow: 0 0 30px;
+  transition: all 800ms ease;
+
+}
+
+
+/* Medium Level */
+.price__med--wrapper{
+  transition: all 800ms ease;
+}
+
+.price__med{
+  background-color: rgb(0, 110, 255);
+  color: white;
   font-size: xx-large;
+
+  margin: 0;
+  border: none;
+  border-radius: 500px;
+  padding: 20px;
+
+  transition: all 800ms ease;
+}
+
+.price__med:hover {
+  background-color: rgb(29, 92, 175);
+  transition: all 800ms ease;
+}
+
+.price__med--wrapper:hover{
+  color: rgb(0, 110, 255);
+  border-radius: 500px;
+  box-shadow: 0 0 30px;
+  transition: all 800ms ease;
+
+}
+
+/* High Level */
+.price__high--wrapper{
+  transition: all 800ms ease;
+}
+
+.price__high{
+  background-color: rgb(223, 65, 65);
+  color: white;
+  font-size: xx-large;
+
+  margin: 0;
+  border: none;
+  border-radius: 500px;
+  padding: 20px;
+
+  transition: all 800ms ease;
+}
+
+.price__high:hover {
+  background-color: rgb(182, 67, 67);
+  transition: all 800ms ease;
+}
+
+.price__high--wrapper:hover{
+  color: red;
+  border-radius: 500px;
+  box-shadow: 0 0 30px;
+  transition: all 800ms ease;
+
 }
 
 
