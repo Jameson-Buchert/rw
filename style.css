@@ -422,7 +422,7 @@ p {
   }
 
 .customer__plans--title{
-   position: relative;
+  position: relative;
   justify-content: space-around;
   text-align: center;
 }
@@ -632,6 +632,33 @@ p {
 
 
 
+/* Testimonials */
+
+.company__test{
+  position: relative;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 100px;
+  }
+
+.company__test--title{
+  position: relative;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.company__test--title h2{
+  font-size: xx-large;
+}
+
+.company__test--title h1 {
+  text-decoration: underline;
+  font-size: 50px;
+}
+
+.company__test--title p{
+  font-size: 25px;
+}
 
 
 
