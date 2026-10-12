@@ -809,6 +809,12 @@ p {
   transition: all 500ms ease;
 }
 
+/* Footer */
+footer{
+  background-color: rgb(34, 47, 61);
+  padding: 300px;
+}
+
 
 
 
@@ -817,48 +823,94 @@ p {
 /*MUST be updated once project is finished*/
 /* Replace this with something more efficient  */
 
-
 /* ============================= */
 /* RESPONSIVE DESIGN */
 /* ============================= */
 
 
-/* LARGE TABLETS / SMALL LAPTOPS */
+/* ============================= */
+/* SMALL LAPTOPS / LARGE TABLETS */
+/* ============================= */
+
 @media (max-width: 1200px) {
 
+  /* NAV */
+
+  .landing {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .nav__link--list {
-    padding-left: 200px;
+    padding-left: 0;
+    padding-right: 30px;
     gap: 25px;
     font-size: 20px;
   }
 
   .page-title {
     padding-left: 30px;
+    margin: 20px;
   }
 
+
+  /* HERO */
+
   .row {
+    width: 100%;
     max-width: 100%;
     margin-left: 0;
     padding: 50px;
+    gap: 40px;
+  }
+
+  .header__description {
+    width: 55%;
+  }
+
+  .header__img--wrapper {
+    width: 45%;
   }
 
   .header__img {
     width: 100%;
     max-width: 600px;
+    margin-left: 0;
+  }
+
+  .header__customers {
+    width: 450px;
+  }
+
+
+  /* FEATURES */
+
+  .row__narrow {
+    max-width: 1000px;
+    padding: 0 30px;
   }
 
   .features__list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    padding: 0 40px;
+    gap: 60px 50px;
   }
+
+  .feature__img--wrapper {
+    width: 100%;
+  }
+
+
+  /* LATEST PRODUCT */
 
   .latest-product {
     padding: 180px 40px 0;
+    gap: 40px;
   }
 
   .latest-title {
     left: 0;
+    width: 50%;
   }
 
   .latest__para--text {
@@ -866,20 +918,27 @@ p {
     max-width: 650px;
   }
 
-  .latest__product--img {
-    width: 500px;
-    max-width: 500px;
+  .latest__product {
+    width: 50%;
   }
+
+  .latest__product--img {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+  }
+
+
+  /* VALUES */
 
   .company__values {
     left: 0;
-    padding: 50px;
+    padding: 70px 40px;
+    gap: 40px;
   }
 
-  .company__values--img {
-    width: 550px;
-    max-width: 550px;
-    right: 0;
+  .company__values--title {
+    width: 100%;
   }
 
   .values__title--para {
@@ -889,16 +948,106 @@ p {
   .values__list {
     width: 100%;
   }
+
+  .values__img--wrapper {
+    padding: 100px 20px;
+  }
+
+  .company__values--img {
+    width: 500px;
+    max-width: 100%;
+    right: 0;
+  }
+
+
+  /* PRICING */
+
+  .customer__plans--wrapper {
+    padding: 0 30px;
+  }
+
+  .plan__types {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .plan__type {
+    margin: 0;
+    padding: 25px;
+  }
+
+  .plan__type--para {
+    width: 100%;
+  }
+
+  .plan__type--title {
+    font-size: 32px;
+  }
+
+  .WYG__list {
+    font-size: 18px;
+  }
+
+  .price__low,
+  .price__med,
+  .price__high {
+    font-size: 22px;
+    padding: 16px;
+  }
+
+
+  /* TESTIMONIALS */
+
+  .company__test {
+    padding: 0 30px;
+  }
+
+  .listed__test--wrapper {
+    gap: 20px;
+  }
+
+  .testimonial {
+    margin: 0;
+  }
+
+
+  /* CTA */
+
+  .get__started--wrapper {
+    margin: 150px 50px;
+    padding: 50px;
+  }
+
+  .get__started--text h1 {
+    width: 50%;
+    font-size: 34px;
+  }
+
+  .get__started--btns {
+    padding-right: 0;
+    margin: 0;
+    gap: 30px;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    padding: 180px 60px;
+  }
 }
 
 
+
+/* ============================= */
 /* TABLETS */
+/* ============================= */
+
 @media (max-width: 900px) {
 
   /* NAV */
 
   .landing {
-    width: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -909,13 +1058,10 @@ p {
   }
 
   .nav__link--list {
-    padding-left: 0;
-
+    padding: 10px 20px;
     flex-wrap: wrap;
     justify-content: center;
-
     gap: 20px;
-
     font-size: 18px;
   }
 
@@ -924,10 +1070,7 @@ p {
 
   .row {
     flex-direction: column;
-
-    margin-left: 0;
     padding: 40px 30px;
-
     text-align: center;
   }
 
@@ -935,48 +1078,39 @@ p {
     width: 100%;
   }
 
+  .header__description--para {
+    max-width: 700px;
+    margin: 30px auto;
+  }
+
   .header__img--wrapper {
     width: 100%;
-
     display: flex;
     justify-content: center;
-
     margin-top: 60px;
   }
 
   .header__img {
     width: 90%;
     max-width: 600px;
-    margin-left: 0;
-  }
-
-  .header__description--para {
-    max-width: 700px;
-    margin: 30px auto;
   }
 
   .header__email {
     position: relative;
-
     width: 100%;
     max-width: 500px;
-
     margin: 25px auto;
   }
 
   .header__email--input {
     position: relative;
-
     width: 100%;
-
     font-size: 20px;
-
     padding: 18px 150px 18px 25px;
   }
 
   .header__email--btn {
     position: absolute;
-
     right: 8px;
     left: auto;
     top: 50%;
@@ -984,13 +1118,13 @@ p {
     transform: translateY(-50%);
 
     margin: 0;
-
     font-size: 18px;
   }
 
   .header__customers {
-    margin: 0 auto;
     width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
 
@@ -1007,9 +1141,7 @@ p {
 
   .features__list {
     grid-template-columns: repeat(2, 1fr);
-
     gap: 50px 30px;
-
     padding: 0 30px;
   }
 
@@ -1022,16 +1154,12 @@ p {
 
   .latest-product {
     flex-direction: column;
-
-    padding: 150px 30px 0;
-
+    padding: 130px 30px 0;
     text-align: center;
   }
 
   .latest-title {
     position: static;
-    left: auto;
-
     width: 100%;
   }
 
@@ -1042,7 +1170,6 @@ p {
   .latest__para--text {
     width: 100%;
     max-width: 700px;
-
     margin: 0 auto;
   }
 
@@ -1050,20 +1177,20 @@ p {
     margin: 25px auto;
   }
 
+  .latest__product {
+    width: 100%;
+  }
+
   .latest__product--wrapper {
     position: relative;
-
     width: 100%;
-
     margin-top: 50px;
   }
 
   .latest__product--img {
     position: relative;
-
     width: 90%;
     max-width: 650px;
-
     margin: 0 auto;
   }
 
@@ -1072,34 +1199,25 @@ p {
 
   .company__values {
     flex-direction: column;
-
-    left: 0;
-
     padding: 80px 30px;
-
     text-align: center;
   }
 
   .company__values--title {
     width: 100%;
-
     margin-top: 50px;
   }
 
   .values__title--para {
     width: 100%;
     max-width: 700px;
-
     margin: 20px auto;
   }
 
   .values__list {
     width: 100%;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 30px;
-
     margin-top: 40px;
   }
 
@@ -1110,17 +1228,128 @@ p {
   .company__values--img {
     width: 80%;
     max-width: 600px;
-
-    right: 0;
   }
 
   .value__LM button {
     margin: 30px auto;
   }
+
+
+  /* PRICING */
+
+  .customer__plans--title {
+    padding: 0 25px;
+  }
+
+  .customer__plans--title h1 {
+    font-size: 40px;
+  }
+
+  .customer__plans--title p {
+    font-size: 20px;
+  }
+
+  .plan__types {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    margin: 40px auto 0;
+    padding: 0 25px;
+    gap: 35px;
+  }
+
+  .plan__type {
+    width: 100%;
+    margin: 0;
+  }
+
+  .plan__type--para {
+    width: 100%;
+  }
+
+  .main__icon--wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan__button--wrapper {
+    padding-bottom: 30px;
+  }
+
+
+  /* TESTIMONIALS */
+
+  .company__test--title {
+    padding: 0 25px;
+  }
+
+  .company__test--title h1 {
+    font-size: 40px;
+  }
+
+  .company__test--title p {
+    font-size: 20px;
+  }
+
+  .listed__testimonials {
+    width: 100%;
+  }
+
+  .listed__test--wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 650px;
+    margin: 40px auto 0;
+    padding: 0 25px;
+    gap: 30px;
+  }
+
+  .testimonial {
+    width: 100%;
+    margin: 0;
+  }
+
+
+  /* CTA */
+
+  .get__started--wrapper {
+    margin: 120px 30px;
+    padding: 40px;
+  }
+
+  .get__started--text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .get__started--text h1 {
+    width: 100%;
+    font-size: 34px;
+  }
+
+  .get__started--btns {
+    width: 100%;
+    justify-content: flex-start;
+    padding-right: 0;
+    margin: 0;
+    gap: 25px;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    padding: 120px 40px;
+  }
 }
 
 
+
+/* ============================= */
 /* PHONES */
+/* ============================= */
+
 @media (max-width: 600px) {
 
   p {
@@ -1147,9 +1376,7 @@ p {
 
   .nav__link--list {
     gap: 15px;
-
     padding: 10px;
-
     font-size: 16px;
   }
 
@@ -1170,17 +1397,11 @@ p {
 
   .header__email--input {
     font-size: 16px;
-
-    padding:
-      16px
-      115px
-      16px
-      20px;
+    padding: 16px 115px 16px 20px;
   }
 
   .header__email--btn {
     font-size: 14px;
-
     padding: 12px;
   }
 
@@ -1209,9 +1430,7 @@ p {
 
   .features__list {
     grid-template-columns: 1fr;
-
     padding: 0 25px;
-
     gap: 50px;
   }
 
@@ -1224,18 +1443,14 @@ p {
   }
 
 
-  /* LATEST PRODUCT */
+  /* LATEST */
 
   .latest-product {
-    padding:
-      100px
-      20px
-      0;
+    padding: 100px 20px 0;
   }
 
   .latest-title h1 {
     margin: 20px 0;
-
     font-size: 30px;
   }
 
@@ -1261,13 +1476,11 @@ p {
 
   .company__values--title h1 {
     font-size: 34px;
-
     margin: 20px 0;
   }
 
   .values__list {
     grid-template-columns: 1fr;
-
     gap: 40px;
   }
 
@@ -1282,15 +1495,150 @@ p {
   .value__LM button {
     font-size: 18px;
   }
+
+
+  /* PRICING */
+
+  .customer__plans--title h1 {
+    font-size: 32px;
+  }
+
+  .customer__plans--title h2 {
+    font-size: 22px;
+  }
+
+  .customer__plans--title p {
+    font-size: 16px;
+  }
+
+  .plan__types {
+    width: 100%;
+    padding: 0 18px;
+  }
+
+  .plan__type {
+    border-width: 5px;
+    padding: 20px;
+  }
+
+  .plan__type--title {
+    font-size: 30px;
+  }
+
+  .plan__main--i {
+    width: 50px;
+    height: 50px;
+    padding: 24px;
+    font-size: 20px;
+  }
+
+  .WYG__list {
+    font-size: 16px;
+  }
+
+  .price__low,
+  .price__med,
+  .price__high {
+    font-size: 18px;
+    padding: 14px 18px;
+  }
+
+
+  /* TESTIMONIALS */
+
+  .company__test {
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  .company__test--title h1 {
+    font-size: 32px;
+  }
+
+  .company__test--title h2 {
+    font-size: 22px;
+  }
+
+  .company__test--title p {
+    font-size: 16px;
+  }
+
+  .listed__test--wrapper {
+    padding: 0 18px;
+  }
+
+  .testimonial {
+    border-width: 5px;
+    padding: 20px;
+  }
+
+  .profile__img {
+    width: 80px;
+    max-width: 80px;
+    margin: 15px;
+  }
+
+  .cust__profile--text h3 {
+    font-size: 20px;
+  }
+
+  .cust__profile--para {
+    text-align: left;
+  }
+
+
+  /* CTA */
+
+  .get__started--wrapper {
+    margin: 80px 20px;
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+
+  .get__started--title {
+    padding-bottom: 25px;
+  }
+
+  .get__started--text {
+    gap: 30px;
+  }
+
+  .get__started--text h1 {
+    font-size: 28px;
+  }
+
+  .get__started--btns {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .GS__btn,
+  .CU__btn {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    padding: 80px 20px;
+  }
 }
 
 
+
+/* ============================= */
 /* VERY SMALL PHONES */
+/* ============================= */
+
 @media (max-width: 400px) {
 
   .nav__link--list {
     font-size: 14px;
-
     gap: 12px;
   }
 
@@ -1306,15 +1654,95 @@ p {
     font-size: 12px;
   }
 
+
+  /* FEATURES */
+
   .features__title h1 {
     font-size: 28px;
   }
+
+
+  /* LATEST */
 
   .latest-title h1 {
     font-size: 27px;
   }
 
+
+  /* VALUES */
+
   .company__values--title h1 {
     font-size: 29px;
+  }
+
+
+  /* PRICING */
+
+  .customer__plans--title h1 {
+    font-size: 28px;
+  }
+
+  .plan__type {
+    padding: 16px;
+  }
+
+  .plan__type--title {
+    font-size: 26px;
+  }
+
+  .WYG__list {
+    font-size: 14px;
+  }
+
+
+  /* TESTIMONIALS */
+
+  .company__test--title h1 {
+    font-size: 28px;
+  }
+
+  .profile__img--wrapper {
+    justify-content: center;
+  }
+
+  .profile__img {
+    width: 70px;
+    max-width: 70px;
+  }
+
+  .cust__profile--text h3 {
+    font-size: 18px;
+  }
+
+  .rating__img {
+    width: 90px;
+  }
+
+
+  /* CTA */
+
+  .get__started--wrapper {
+    margin: 60px 15px;
+    padding: 25px 18px;
+  }
+
+  .get__started--text h1 {
+    font-size: 24px;
+  }
+
+  .get__started--title h2 {
+    font-size: 20px;
+  }
+
+  .GS__btn,
+  .CU__btn {
+    font-size: 16px;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    padding: 60px 15px;
   }
 }
