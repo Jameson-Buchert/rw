@@ -913,21 +913,23 @@ footer{
 
 
 
-/*MUST be updated once project is finished*/
-/* Replace this with something more efficient  */
 
-/* ============================= */
+/* Will be replacing this with something more efficient  */
+
+
+/* ======================================== */
 /* RESPONSIVE DESIGN */
-/* ============================= */
+/* ======================================== */
 
 
-/* ============================= */
+/* ======================================== */
 /* SMALL LAPTOPS / LARGE TABLETS */
-/* ============================= */
+/* 1200px AND BELOW */
+/* ======================================== */
 
 @media (max-width: 1200px) {
 
-  /* NAV */
+  /* ---------- NAV ---------- */
 
   .landing {
     width: 100%;
@@ -938,23 +940,29 @@ footer{
   .nav__link--list {
     padding-left: 0;
     padding-right: 30px;
+
     gap: 25px;
+
     font-size: 20px;
   }
 
   .page-title {
-    padding-left: 30px;
     margin: 20px;
+
+    padding: 20px;
+    padding-left: 30px;
   }
 
 
-  /* HERO */
+  /* ---------- HERO ---------- */
 
   .row {
     width: 100%;
-    max-width: 100%;
-    margin-left: 0;
+    max-width: 1200px;
+
+    margin: 0 auto;
     padding: 50px;
+
     gap: 40px;
   }
 
@@ -969,23 +977,28 @@ footer{
   .header__img {
     width: 100%;
     max-width: 600px;
+
     margin-left: 0;
   }
 
   .header__customers {
     width: 450px;
+    max-width: 100%;
   }
 
 
-  /* FEATURES */
+  /* ---------- FEATURES ---------- */
 
   .row__narrow {
+    width: 100%;
     max-width: 1000px;
+
     padding: 0 30px;
   }
 
   .features__list {
     grid-template-columns: repeat(2, 1fr);
+
     gap: 60px 50px;
   }
 
@@ -994,15 +1007,17 @@ footer{
   }
 
 
-  /* LATEST PRODUCT */
+  /* ---------- LATEST PRODUCT ---------- */
 
   .latest-product {
-    padding: 180px 40px 0;
-    gap: 40px;
+    padding: 170px 40px 0;
+
+    gap: 50px;
   }
 
   .latest-title {
     left: 0;
+
     width: 50%;
   }
 
@@ -1015,19 +1030,28 @@ footer{
     width: 50%;
   }
 
+  .latest__product--wrapper {
+    width: 100%;
+  }
+
   .latest__product--img {
     position: relative;
+
     width: 100%;
     max-width: 550px;
+
+    margin: 0 auto;
   }
 
 
-  /* VALUES */
+  /* ---------- VALUES ---------- */
 
   .company__values {
     left: 0;
+
     padding: 70px 40px;
-    gap: 40px;
+
+    gap: 50px;
   }
 
   .company__values--title {
@@ -1047,24 +1071,30 @@ footer{
   }
 
   .company__values--img {
+    right: 0;
+
     width: 500px;
     max-width: 100%;
-    right: 0;
   }
 
 
-  /* PRICING */
+  /* ---------- PRICING ---------- */
 
   .customer__plans--wrapper {
     padding: 0 30px;
   }
 
   .plan__types {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+
+    width: 100%;
   }
 
   .plan__type {
+    width: 100%;
+
     margin: 0;
     padding: 25px;
   }
@@ -1084,86 +1114,125 @@ footer{
   .price__low,
   .price__med,
   .price__high {
-    font-size: 22px;
-    padding: 16px;
+    font-size: 21px;
+
+    padding: 16px 20px;
   }
 
 
-  /* TESTIMONIALS */
+  /* ---------- TESTIMONIALS ---------- */
 
   .company__test {
     padding: 0 30px;
   }
 
   .listed__test--wrapper {
-    gap: 20px;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+
+    gap: 25px;
   }
 
   .testimonial {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+
+    width: 100%;
+
     margin: 0;
   }
 
+  .cust__profile--para {
+    grid-column: 1 / -1;
+  }
 
-  /* CTA */
+
+  /* ---------- CTA ---------- */
 
   .get__started--wrapper {
-    margin: 150px 50px;
-    padding: 50px;
+    margin: 130px 50px;
+
+    padding: 45px;
+  }
+
+  .get__started--text {
+    gap: 40px;
   }
 
   .get__started--text h1 {
     width: 50%;
+
     font-size: 34px;
   }
 
   .get__started--btns {
     padding-right: 0;
+
     margin: 0;
-    gap: 30px;
+
+    gap: 25px;
   }
 
 
-  /* FOOTER */
+  /* ---------- FOOTER ---------- */
 
-  footer {
-    padding: 180px 60px;
+  footer,
+  .footer {
+    padding: 60px 50px 30px;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
   }
 }
 
 
-
-/* ============================= */
+/* ======================================== */
 /* TABLETS */
-/* ============================= */
+/* 900px AND BELOW */
+/* ======================================== */
 
 @media (max-width: 900px) {
 
-  /* NAV */
+  /* ---------- NAV ---------- */
 
   .landing {
     flex-direction: column;
+
     align-items: center;
   }
 
   .page-title {
     margin: 15px;
+
     padding: 15px;
   }
 
   .nav__link--list {
     padding: 10px 20px;
+
     flex-wrap: wrap;
     justify-content: center;
+
     gap: 20px;
+
     font-size: 18px;
   }
 
 
-  /* HERO */
+  /* ---------- HERO ---------- */
 
   .row {
     flex-direction: column;
+
     padding: 40px 30px;
+
     text-align: center;
   }
 
@@ -1173,14 +1242,18 @@ footer{
 
   .header__description--para {
     max-width: 700px;
+
     margin: 30px auto;
   }
 
   .header__img--wrapper {
-    width: 100%;
     display: flex;
+
     justify-content: center;
-    margin-top: 60px;
+
+    width: 100%;
+
+    margin-top: 50px;
   }
 
   .header__img {
@@ -1190,41 +1263,50 @@ footer{
 
   .header__email {
     position: relative;
+
     width: 100%;
     max-width: 500px;
+
     margin: 25px auto;
   }
 
   .header__email--input {
     position: relative;
+
     width: 100%;
+
     font-size: 20px;
+
     padding: 18px 150px 18px 25px;
   }
 
   .header__email--btn {
     position: absolute;
+
+    top: 50%;
     right: 8px;
     left: auto;
-    top: 50%;
-
-    transform: translateY(-50%);
 
     margin: 0;
+
     font-size: 18px;
+
+    transform: translateY(-50%);
   }
 
   .header__customers {
     width: 400px;
     max-width: 100%;
+
     margin: 0 auto;
   }
 
 
-  /* FEATURES */
+  /* ---------- FEATURES ---------- */
 
   .features__title {
     margin-top: 120px;
+
     padding: 0 25px;
   }
 
@@ -1234,25 +1316,26 @@ footer{
 
   .features__list {
     grid-template-columns: repeat(2, 1fr);
+
     gap: 50px 30px;
+
     padding: 0 30px;
   }
 
-  .feature__img--wrapper {
-    width: 100%;
-  }
 
-
-  /* LATEST PRODUCT */
+  /* ---------- LATEST PRODUCT ---------- */
 
   .latest-product {
     flex-direction: column;
-    padding: 130px 30px 0;
+
+    padding: 120px 30px 0;
+
     text-align: center;
   }
 
   .latest-title {
     position: static;
+
     width: 100%;
   }
 
@@ -1263,6 +1346,7 @@ footer{
   .latest__para--text {
     width: 100%;
     max-width: 700px;
+
     margin: 0 auto;
   }
 
@@ -1275,52 +1359,65 @@ footer{
   }
 
   .latest__product--wrapper {
-    position: relative;
     width: 100%;
-    margin-top: 50px;
+
+    margin-top: 40px;
   }
 
   .latest__product--img {
     position: relative;
+
     width: 90%;
     max-width: 650px;
+
     margin: 0 auto;
   }
 
 
-  /* VALUES */
+  /* ---------- VALUES ---------- */
 
   .company__values {
     flex-direction: column;
+
+    left: 0;
+
     padding: 80px 30px;
+
     text-align: center;
   }
 
   .company__values--title {
     width: 100%;
-    margin-top: 50px;
+
+    margin-top: 40px;
   }
 
   .values__title--para {
     width: 100%;
     max-width: 700px;
+
     margin: 20px auto;
   }
 
   .values__list {
     width: 100%;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 30px;
+
     margin-top: 40px;
   }
 
   .values__img--wrapper {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 
   .company__values--img {
     width: 80%;
     max-width: 600px;
+
+    right: 0;
   }
 
   .value__LM button {
@@ -1328,7 +1425,7 @@ footer{
   }
 
 
-  /* PRICING */
+  /* ---------- PRICING ---------- */
 
   .customer__plans--title {
     padding: 0 25px;
@@ -1344,14 +1441,19 @@ footer{
 
   .plan__types {
     grid-template-columns: 1fr;
+
+    width: 100%;
     max-width: 650px;
+
     margin: 40px auto 0;
     padding: 0 25px;
+
     gap: 35px;
   }
 
   .plan__type {
     width: 100%;
+
     margin: 0;
   }
 
@@ -1361,15 +1463,12 @@ footer{
 
   .main__icon--wrapper {
     display: flex;
+
     justify-content: center;
   }
 
-  .plan__button--wrapper {
-    padding-bottom: 30px;
-  }
 
-
-  /* TESTIMONIALS */
+  /* ---------- TESTIMONIALS ---------- */
 
   .company__test--title {
     padding: 0 25px;
@@ -1388,73 +1487,95 @@ footer{
   }
 
   .listed__test--wrapper {
-    display: grid;
     grid-template-columns: 1fr;
+
     width: 100%;
     max-width: 650px;
+
     margin: 40px auto 0;
     padding: 0 25px;
+
     gap: 30px;
   }
 
   .testimonial {
     width: 100%;
-    margin: 0;
   }
 
 
-  /* CTA */
+  /* ---------- CTA ---------- */
 
   .get__started--wrapper {
-    margin: 120px 30px;
+    margin: 100px 30px;
+
     padding: 40px;
   }
 
   .get__started--text {
     flex-direction: column;
+
     align-items: flex-start;
+
     gap: 35px;
   }
 
   .get__started--text h1 {
     width: 100%;
+
     font-size: 34px;
   }
 
   .get__started--btns {
     width: 100%;
+
     justify-content: flex-start;
+
     padding-right: 0;
+
     margin: 0;
+
     gap: 25px;
   }
 
 
-  /* FOOTER */
+  /* ---------- FOOTER ---------- */
 
-  footer {
-    padding: 120px 40px;
+  footer,
+  .footer {
+    padding: 55px 35px 25px;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+  }
+
+  .footer__bottom {
+    margin-top: 40px;
   }
 }
 
 
-
-/* ============================= */
+/* ======================================== */
 /* PHONES */
-/* ============================= */
+/* 600px AND BELOW */
+/* ======================================== */
 
 @media (max-width: 600px) {
 
   p {
     font-size: 16px;
+
     line-height: 1.6;
   }
 
 
-  /* NAV */
+  /* ---------- NAV ---------- */
 
   .page-title {
     flex-direction: column;
+
     gap: 10px;
   }
 
@@ -1468,13 +1589,15 @@ footer{
   }
 
   .nav__link--list {
-    gap: 15px;
     padding: 10px;
+
+    gap: 15px;
+
     font-size: 16px;
   }
 
 
-  /* HERO */
+  /* ---------- HERO ---------- */
 
   .row {
     padding: 30px 20px;
@@ -1490,11 +1613,13 @@ footer{
 
   .header__email--input {
     font-size: 16px;
+
     padding: 16px 115px 16px 20px;
   }
 
   .header__email--btn {
     font-size: 14px;
+
     padding: 12px;
   }
 
@@ -1507,7 +1632,7 @@ footer{
   }
 
 
-  /* FEATURES */
+  /* ---------- FEATURES ---------- */
 
   .features__title {
     margin-top: 80px;
@@ -1523,7 +1648,9 @@ footer{
 
   .features__list {
     grid-template-columns: 1fr;
-    padding: 0 25px;
+
+    padding: 0 20px;
+
     gap: 50px;
   }
 
@@ -1536,14 +1663,15 @@ footer{
   }
 
 
-  /* LATEST */
+  /* ---------- LATEST PRODUCT ---------- */
 
   .latest-product {
-    padding: 100px 20px 0;
+    padding: 90px 20px 0;
   }
 
   .latest-title h1 {
     margin: 20px 0;
+
     font-size: 30px;
   }
 
@@ -1561,19 +1689,21 @@ footer{
   }
 
 
-  /* VALUES */
+  /* ---------- VALUES ---------- */
 
   .company__values {
     padding: 60px 20px;
   }
 
   .company__values--title h1 {
-    font-size: 34px;
     margin: 20px 0;
+
+    font-size: 34px;
   }
 
   .values__list {
     grid-template-columns: 1fr;
+
     gap: 40px;
   }
 
@@ -1585,12 +1715,8 @@ footer{
     padding: 50px 0;
   }
 
-  .value__LM button {
-    font-size: 18px;
-  }
 
-
-  /* PRICING */
+  /* ---------- PRICING ---------- */
 
   .customer__plans--title h1 {
     font-size: 32px;
@@ -1606,11 +1732,13 @@ footer{
 
   .plan__types {
     width: 100%;
-    padding: 0 18px;
+
+    padding: 0 15px;
   }
 
   .plan__type {
     border-width: 5px;
+
     padding: 20px;
   }
 
@@ -1621,26 +1749,39 @@ footer{
   .plan__main--i {
     width: 50px;
     height: 50px;
+
     padding: 24px;
+
     font-size: 20px;
+  }
+
+  .plan__type--para {
+    width: 100%;
   }
 
   .WYG__list {
     font-size: 16px;
   }
 
+  .plan__button--wrapper {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
   .price__low,
   .price__med,
   .price__high {
     font-size: 18px;
+
     padding: 14px 18px;
   }
 
 
-  /* TESTIMONIALS */
+  /* ---------- TESTIMONIALS ---------- */
 
   .company__test {
     margin-top: 80px;
+
     padding: 0;
   }
 
@@ -1657,18 +1798,32 @@ footer{
   }
 
   .listed__test--wrapper {
-    padding: 0 18px;
+    padding: 0 15px;
   }
 
   .testimonial {
+    grid-template-columns: 1fr;
+
     border-width: 5px;
+
     padding: 20px;
+
+    text-align: center;
+  }
+
+  .profile__img--wrapper {
+    justify-content: center;
   }
 
   .profile__img {
     width: 80px;
     max-width: 80px;
-    margin: 15px;
+
+    margin: 15px auto;
+  }
+
+  .cust__profile--text {
+    align-items: center;
   }
 
   .cust__profile--text h3 {
@@ -1676,15 +1831,19 @@ footer{
   }
 
   .cust__profile--para {
-    text-align: left;
+    grid-column: auto;
+
+    text-align: center;
   }
 
 
-  /* CTA */
+  /* ---------- CTA ---------- */
 
   .get__started--wrapper {
     margin: 80px 20px;
+
     padding: 30px 20px;
+
     border-radius: 30px;
   }
 
@@ -1697,43 +1856,87 @@ footer{
   }
 
   .get__started--text h1 {
+    width: 100%;
+
     font-size: 28px;
   }
 
   .get__started--btns {
     flex-direction: column;
+
     align-items: stretch;
+
     width: 100%;
+
     gap: 15px;
   }
 
   .GS__btn,
   .CU__btn {
     width: 100%;
-    font-size: 18px;
+
     padding: 15px;
+
+    font-size: 18px;
   }
 
 
-  /* FOOTER */
+  /* ---------- FOOTER ---------- */
 
-  footer {
-    padding: 80px 20px;
+  footer,
+  .footer {
+    padding: 45px 20px 25px;
+
+    margin-top: 80px;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    text-align: center;
+  }
+
+  .footer__links,
+  .footer__contact,
+  .footer__socials {
+    align-items: center;
+  }
+
+  .footer__socials a {
+    margin: 0 8px;
+  }
+
+  .footer__bottom {
+    margin-top: 35px;
+
+    padding-top: 20px;
+  }
+
+  .footer__bottom p {
+    font-size: 14px;
   }
 }
 
 
-
-/* ============================= */
+/* ======================================== */
 /* VERY SMALL PHONES */
-/* ============================= */
+/* 400px AND BELOW */
+/* ======================================== */
 
 @media (max-width: 400px) {
 
+  /* ---------- NAV ---------- */
+
   .nav__link--list {
-    font-size: 14px;
     gap: 12px;
+
+    font-size: 14px;
   }
+
+
+  /* ---------- HERO ---------- */
 
   .header__description h2 {
     font-size: 24px;
@@ -1748,28 +1951,28 @@ footer{
   }
 
 
-  /* FEATURES */
+  /* ---------- FEATURES ---------- */
 
   .features__title h1 {
     font-size: 28px;
   }
 
 
-  /* LATEST */
+  /* ---------- LATEST ---------- */
 
   .latest-title h1 {
     font-size: 27px;
   }
 
 
-  /* VALUES */
+  /* ---------- VALUES ---------- */
 
   .company__values--title h1 {
     font-size: 29px;
   }
 
 
-  /* PRICING */
+  /* ---------- PRICING ---------- */
 
   .customer__plans--title h1 {
     font-size: 28px;
@@ -1788,14 +1991,10 @@ footer{
   }
 
 
-  /* TESTIMONIALS */
+  /* ---------- TESTIMONIALS ---------- */
 
   .company__test--title h1 {
     font-size: 28px;
-  }
-
-  .profile__img--wrapper {
-    justify-content: center;
   }
 
   .profile__img {
@@ -1812,10 +2011,11 @@ footer{
   }
 
 
-  /* CTA */
+  /* ---------- CTA ---------- */
 
   .get__started--wrapper {
     margin: 60px 15px;
+
     padding: 25px 18px;
   }
 
@@ -1833,9 +2033,25 @@ footer{
   }
 
 
-  /* FOOTER */
+  /* ---------- FOOTER ---------- */
 
-  footer {
-    padding: 60px 15px;
+  footer,
+  .footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer__content {
+    gap: 30px;
+  }
+
+  .footer__brand h2,
+  .footer__links h3,
+  .footer__contact h3,
+  .footer__socials h3 {
+    font-size: 19px;
+  }
+
+  .footer__socials a {
+    font-size: 22px;
   }
 }
