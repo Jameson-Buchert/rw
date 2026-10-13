@@ -148,6 +148,8 @@ p {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+    
+    animation: fade-up 300ms 200ms backwards;
   }
 
 }
