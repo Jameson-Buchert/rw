@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NEXA Robotics</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 
   <link
   rel="stylesheet"
@@ -14,14 +15,14 @@
 </head>
 <body>
   <nav>
-  <section class="landing">
+  <div class="landing">
 
 <div class="page-title">
   <img class="page__title--img" src="./assets/CHP.png" alt="CHP">
   <h1>NEXA Robotics</h1>
 </div>
 
-    <ul class="nav__link--list">
+    <ul class="nav__link--list" id="navigation-links">
       <li class="nav__link">
         <a href="index.html" class="nav__link--underline">Home</a>
       </li>
@@ -33,7 +34,14 @@
       <li class="nav__link"><a href="pages/login.html" class="nav__link--underline">Login</a></li>
       <li class="nav__link"><a href="pages/signup.html" class="nav__link--signup">Sign Up</a></li>
     </ul>
-    </nav>
+
+    <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation-links">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+    </div>
+  </nav>
 
   <header>
     <div class="container">
@@ -67,8 +75,7 @@
 
     </div>
 
-      </header>  
-    </section>
+  </header>
 <br>
 
 <!--Features-->

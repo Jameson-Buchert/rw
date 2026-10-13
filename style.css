@@ -80,6 +80,84 @@ p {
   color: white;
 }
 
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.hamburger:focus-visible {
+  outline: 2px solid rgb(0, 110, 255);
+  outline-offset: 4px;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width: 768px){
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+
+  .nav__link--list{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(58, 53, 53);
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .nav__link{
+    margin: 16px 0;
+
+  }
+
+  .nav__link--list.active{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+}
+
+nav {
+  position: relative;
+  z-index: 10;
+}
+
+
 /*Landing*/
 
 .landing {
@@ -145,6 +223,39 @@ p {
 
 }
 
+@media (max-width: 768px) {
+  .landing {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .page-title {
+    margin: 12px 0;
+    padding: 0;
+    gap: 8px;
+  }
+
+  .page-title h1 {
+    font-size: clamp(18px, 5vw, 27px);
+  }
+
+  .page__title--img {
+    width: 48px;
+  }
+
+  .nav__link--list {
+    margin: 0;
+    gap: 0;
+    flex-wrap: nowrap;
+    animation: none;
+  }
+
+  .nav__link a {
+    display: block;
+    padding: 10px 24px;
+  }
+}
+
 /* Get Started */
 .row {
   display: grid;
@@ -158,7 +269,7 @@ p {
   display: grid;
   grid-template-columns:
   repeat(auto-fit, minmax(min(100%, 450px), 1fr));
-  
+
   gap: clamp(30px, 5vw, 80px);
   width: min(1400px, 92%);
   max-width: none;
@@ -200,7 +311,7 @@ p {
 
 .header__description--para {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
 
   margin: 32px 0px;
   animation: fade-up 400ms 800ms backwards;
@@ -349,7 +460,7 @@ p {
 .latest-title {
   position: relative;
   font-size: large;
-  
+
   left: auto;
   width: 100%;
 }
@@ -546,10 +657,10 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
- 
+
   border: 8px solid rgba(180, 180, 180, 0.25);
   border-radius: 20px;
-  
+
   margin: 0;
   padding: 30px;
   width: 100%;
@@ -589,7 +700,7 @@ p {
 
 }
 
-.plan__type h2, 
+.plan__type h2,
 .plan__type p{
   text-align: left;
   padding: 10px;
@@ -778,18 +889,18 @@ p {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  
+
 }
 
 .testimonial{
   position: relative;
   align-items: center;
-  
+
   border: 8px solid rgba(180, 180, 180, 0.25);
   border-radius: 20px;
   margin: 0;
   padding: 20px;
-  
+
   width: 100%;
   min-width: 0;
 
@@ -855,7 +966,7 @@ p {
 .get__started--wrapper{
   background-color: rgb(34, 47, 61);
   border-radius: 50px;
-  
+
   width: min(1400px, 92%);
   margin: clamp(80px, 10vw, 200px) auto;
   padding: clamp(30px, 5vw, 50px);
@@ -890,8 +1001,8 @@ p {
   flex-wrap: wrap;
 
   justify-content: center;
-  align-items: center;  
-  
+  align-items: center;
+
   gap: clamp(20px, 3vw, 50px);
   padding-right: 0;
   margin: 0;
@@ -940,9 +1051,9 @@ footer{
 
 
 .footer {
-  background-color: rgb(34, 47, 61);  
+  background-color: rgb(34, 47, 61);
   margin-top: 150px;
-  
+
   padding: clamp(40px, 5vw, 60px)
   clamp(20px, 5vw, 80px) 30px;
 
@@ -952,7 +1063,7 @@ footer{
   display: grid;
   grid-template-columns:
   repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-  
+
   gap: clamp(30px, 4vw, 50px);
 }
 
